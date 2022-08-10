@@ -77,8 +77,7 @@ class UserController {
       {}
     );
 
-    let result = user.toJSON();
-    result.token = token;
+    user.token = token;
 
     return res.status(200).json(user);
   }
