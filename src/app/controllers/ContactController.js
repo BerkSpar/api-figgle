@@ -138,7 +138,7 @@ class ContactController {
 
     let contact = await Contact.findOne({
       where: {
-        id,
+        id: req.params.contact_id,
         userId: req.user.id,
       },
     });
@@ -177,11 +177,9 @@ class ContactController {
   }
 
   async destroy(req, res) {
-    const id = req.params.contact_id;
-
     let contact = await Contact.findOne({
       where: {
-        id,
+        id: req.params.contact_id,
         userId: req.user.id,
       },
     });
