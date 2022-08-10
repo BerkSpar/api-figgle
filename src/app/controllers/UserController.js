@@ -67,6 +67,19 @@ class UserController {
 
     user.password_hash = undefined;
 
+    const token = jwt.sign(
+      {
+        user: {
+          id: user.id,
+        },
+      },
+      process.env.JWT_SECRET,
+      {}
+    );
+
+    let result = user.toJSON();
+    result.token = token;
+
     return res.status(200).json(user);
   }
 
