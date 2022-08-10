@@ -22,7 +22,7 @@ class ContactController {
       image: Yup.object().shape({
         data: Yup.string().notRequired(),
       }),
-      remembeer_at: Yup.date().notRequired(),
+      remember_at: Yup.date().notRequired(),
     });
 
     try {
@@ -31,7 +31,7 @@ class ContactController {
       return res.status(400).json({ message: e.errors[0] });
     }
 
-    let { name, email, image, address, remembeer_at } = req.body;
+    let { name, email, image, address, remember_at } = req.body;
 
     var includes = [];
 
@@ -49,7 +49,7 @@ class ContactController {
         email,
         image,
         address,
-        remembeer_at,
+        remember_at,
         userId: req.user.id,
       },
       { include: includes }
@@ -127,7 +127,7 @@ class ContactController {
       image: Yup.object().shape({
         data: Yup.string().notRequired(),
       }),
-      remembeer_at: Yup.date().notRequired(),
+      remember_at: Yup.date().notRequired(),
     });
 
     try {
@@ -147,12 +147,12 @@ class ContactController {
       return res.status(404).json({ message: 'Contato não encontrado' });
     }
 
-    let { name, email, image, address, remembeer_at } = req.body;
+    let { name, email, image, address, remember_at } = req.body;
 
     contact = await contact.update({
       name,
       email,
-      remembeer_at,
+      remember_at,
     });
 
     contact = await Contact.findByPk(contact.id);
