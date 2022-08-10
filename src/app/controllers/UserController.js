@@ -145,7 +145,7 @@ class UserController {
       return res.status(400).json({ message: e.errors[0] });
     }
 
-    var user = await User.findByPk(req.params.user_id);
+    var user = await User.findByPk(req.user.id);
 
     if (!user) {
       return res.status(404).json({ message: 'Usuário não encontrado' });

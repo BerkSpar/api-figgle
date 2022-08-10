@@ -18,7 +18,7 @@ routes.get('/image/:image_id', asyncHandler(ImageController.show));
 routes.get('/user', Auth.verify, asyncHandler(UserController.find));
 routes.post('/user/signin', asyncHandler(UserController.signin));
 routes.post('/user/signup', asyncHandler(UserController.signup));
-routes.put('/user/:user_id', asyncHandler(UserController.update));
+routes.put('/user', asyncHandler(UserController.update));
 
 // Contact
 routes.get('/contact', Auth.verify, asyncHandler(ContactController.index));
