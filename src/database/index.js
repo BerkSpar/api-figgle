@@ -5,12 +5,7 @@ import User from '../app/models/user';
 
 import databaseConfig from '../config/database';
 
-const models = 
-[
-  Address, 
-  User, 
-  Image,
-];
+const models = [Address, User, Image];
 
 class Database {
   constructor() {
