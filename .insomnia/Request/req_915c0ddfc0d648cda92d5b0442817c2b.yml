@@ -1,0 +1,25 @@
+_id: req_915c0ddfc0d648cda92d5b0442817c2b
+type: Request
+parentId: fld_9096a7f227364fa482183af22cf267ec
+modified: 1660108546298
+created: 1660108546298
+url: "{{ _.host }}/user"
+name: get current user
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_446f2dee697d49e19cf1b7b3bc64a910
+    name: x-access-token
+    value: "{{ _.user_token }}"
+    description: ""
+authentication: {}
+metaSortKey: -1660103321938
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

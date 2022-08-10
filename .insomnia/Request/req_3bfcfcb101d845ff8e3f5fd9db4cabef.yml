@@ -1,0 +1,25 @@
+_id: req_3bfcfcb101d845ff8e3f5fd9db4cabef
+type: Request
+parentId: fld_9dbb55f0edb541c3a93c75e146020600
+modified: 1660108539785
+created: 1660108539785
+url: "{{ _.host }}/contact/1"
+name: delete
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - id: pair_44eb7f19a9de47f5b663e3895dc39d25
+    name: x-access-token
+    value: "{{ _.user_token }}"
+    description: ""
+authentication: {}
+metaSortKey: -1660103397887
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,38 @@
+_id: req_81fac13db40e41debe90075cc7732b61
+type: Request
+parentId: fld_9096a7f227364fa482183af22cf267ec
+modified: 1660108546300
+created: 1660108546300
+url: "{{ _.host }}/user"
+name: update
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"image": {
+    		"data": " "
+    	},
+    	"email": "test@test.com",
+    	"name": "Test User",
+    	"password": "test"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_40d26f12cb13436398ef4b210bc89956
+  - id: pair_8dc9c7829df94eabb27ec1c09e7a50ae
+    name: x-access-token
+    value: "{{_.user_token}}"
+    description: ""
+authentication: {}
+metaSortKey: -1660104432223
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

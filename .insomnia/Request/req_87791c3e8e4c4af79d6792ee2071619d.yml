@@ -1,0 +1,34 @@
+_id: req_87791c3e8e4c4af79d6792ee2071619d
+type: Request
+parentId: fld_9096a7f227364fa482183af22cf267ec
+modified: 1660108546297
+created: 1660108546297
+url: "{{ _.host }}/user/signup"
+name: signup
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"image": {
+    		"data": " "
+    	},
+    	"email": "test@test.com",
+    	"name": "Test User",
+    	"password": "test"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_dc02f12295e94d61928685e6d249c800
+authentication: {}
+metaSortKey: -1660103315407
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,50 @@
+_id: req_20caf6ef67fa41f7b1846b27c23b3327
+type: Request
+parentId: fld_9dbb55f0edb541c3a93c75e146020600
+modified: 1660108539784
+created: 1660108539784
+url: "{{ _.host }}/contact/1"
+name: update
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"image": {
+    		"data": " "
+    	},
+    	"name": "Felipe Passos",
+    	"email": "berkspar@gmail.com",
+    	"address": {
+    		"street": "Rua Martin Wendrychowski",
+    		"number": "1",
+    		"district": "Capão Raso",
+    		"zip": "81110-370",
+    		"city": "Curitiba",
+    		"state": "PR",
+    		"country": "Brasil",
+    		"complement": "",
+    		"lat": 0,
+    		"lng": 1
+    	},
+    	"remember_at": "2022-10-10"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_47e255384f4747d2bdba92213482d7cf
+  - id: pair_54fa93d454d04c1089481e74a33de216
+    name: x-access-token
+    value: "{{ _.user_token }}"
+    description: ""
+authentication: {}
+metaSortKey: -1660103393054
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

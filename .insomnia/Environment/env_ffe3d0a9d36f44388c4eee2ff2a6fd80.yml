@@ -1,0 +1,16 @@
+_id: env_ffe3d0a9d36f44388c4eee2ff2a6fd80
+type: Environment
+parentId: env_e80f20f1e97e89bdb8c3e69c1a16b9cf90387ed3
+modified: 1660108601072
+created: 1660108579454
+name: Local Development
+data:
+  host: localhost:8081
+  user_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxfSwiaWF0IjoxNjYwMTA2Mjc1fQ.4Bjclsa2WNd7cDAu1hB8d9hZ0v5NWl0-tWbFme51xJ0
+dataPropertyOrder:
+  "&":
+    - host
+    - user_token
+color: "#2bff00"
+isPrivate: false
+metaSortKey: 1660108579454

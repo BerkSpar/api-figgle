@@ -1,0 +1,25 @@
+_id: req_b3fb8cf2bed643f9a52a7717c0044b94
+type: Request
+parentId: fld_9dbb55f0edb541c3a93c75e146020600
+modified: 1660108539778
+created: 1660108539778
+url: "{{ _.host }}/contact"
+name: index
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_587e777a88e94ccea3336464cfb89960
+    name: x-access-token
+    value: "{{_.user_token}}"
+    description: ""
+authentication: {}
+metaSortKey: -1660103364001
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
