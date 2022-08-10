@@ -1,12 +1,7 @@
-import FilterParser from '../services/FilterParser';
 import * as Yup from 'yup';
-import { Op } from 'sequelize';
 import User from '../models/user';
 import Image from '../models/image';
 import jwt from 'jsonwebtoken';
-import auth from '../middlewares/auth';
-import Address from '../models/address';
-import db from '../../database';
 
 class UserController {
   async signup(req, res) {
@@ -33,12 +28,7 @@ class UserController {
         .json({ message: 'Existe outra conta com esse email' });
     }
 
-    let {
-      name,
-      email,
-      password,
-      image,
-    } = req.body;
+    let { name, email, password, image } = req.body;
 
     var includes = [];
 
@@ -96,7 +86,7 @@ class UserController {
 
     const user = await User.findOne({
       where: {
-        email
+        email,
       },
     });
 
@@ -149,12 +139,7 @@ class UserController {
       return res.status(404).json({ message: 'Usuário não encontrado' });
     }
 
-    const {
-      name,
-      email,
-      password,
-      image,
-    } = req.body;
+    const { name, email, password, image } = req.body;
 
     user = await user.update({
       name,
@@ -177,6 +162,5 @@ class UserController {
     return res.status(200).json(user);
   }
 }
-
 
 export default new UserController();
